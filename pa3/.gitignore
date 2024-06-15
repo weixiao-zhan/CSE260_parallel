@@ -1,0 +1,8 @@
+apf
+*.o
+MPI*
+.vscode/
+report/*
+!report/img
+!report/report.tex
+!report/report.ipynb

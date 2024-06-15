@@ -1,0 +1,168 @@
+#########################################################################
+#									#
+# Sample makefile header for running with Gnu compilers  		#
+# Both MPI and OMP compilation may be independently enabled		#
+#									#
+#  The makefile targets are appended to  the end of this file		#
+#	 Don't change anything that comes before the targets 		#
+#									#
+#									#
+#########################################################################
+
+RM		= rm -f
+LN		= ln -s
+ECHO		= echo
+
+
+# STD             = --std=c++0x
+STDCPP          = --std=c++11
+STDC            = --std=c11
+
+# Compile with MPI
+ifeq ($(mpi),1)
+C++ 		= mpicxx $(STDCPP)
+CC		= mpicc $(STDC)
+CFLAGS 		+= -D_MPI_
+C++FLAGS 	+= -D_MPI_
+FFLAGS += -D_MPI_
+else
+C++ 		= g++ $(STDCPP)
+CC 		= gcc $(STDC)
+endif
+
+ifeq ($(fpmpi),1)
+LDLIBS          += -L/share/class/public/cse260-wi14/lib/fpmpi-2.1g -lfpmpi
+endif
+
+
+ifeq ($(ppf),1)
+PPF_ROOT 	= $(PUB)/lib/PPF
+
+INCLUDES 	+= -I$(PPF_ROOT)
+
+CFLAGS 		+= -DFORTRANUNDERSCORE=1 -DPOINTER_64_BITS=1 -DHAVE_MPIR_TOPOINTER=1 -DSTDC_HEADERS=1 -DHAVE_VPRINTF=1 
+C++FLAGS 	+= -DFORTRANUNDERSCORE=1 -DPOINTER_64_BITS=1 -DHAVE_MPIR_TOPOINTER=1 -DSTDC_HEADERS=1 -DHAVE_VPRINTF=1 
+LDLIBS		+= $(PPF_ROOT)/libptools_ppf.a
+endif
+
+
+# If you want to add symbol table information for gdb/cachegrind
+# specify gdb=1 on the "make" command line
+ifeq ($(gdb), 1)
+        CFLAGS += -g
+        LDFLAGS += -g
+        C++FLAGS += -g
+endif   
+
+ifeq ($(gprof), 1)
+        CFLAGS += -g -pg
+        C++FLAGS += -g -pg
+        LDFLAGS += -g -pg
+endif
+
+#
+#
+# If you want to add symbol table information for valgrind/cachegrind
+# specify valgrind=1 on the "make" command line or inside the makefile 
+# before including this file
+ifeq ($(valgrind), 1)
+        CFLAGS += -g
+        C++FLAGS += -g
+        LDFLAGS += -g
+endif
+
+
+ifeq ($(atlas),1)
+#include Atlas library
+include $(PUB)/Arch/atlas_defs
+endif
+
+LDLIBS 		+= $(LIB_BLAS)
+
+
+# C++ 		= /opt/gcc-4.7.0/bin/g++ $(STDCPP)
+# CC		= /opt/gcc-4.7.0/bin/gcc $(STDC)
+AR		= ar
+RANLIB		= ranlib
+C++LINK		= $(C++)
+CLINK		= $(CC)
+
+# This generates output about how the
+# compiler vectorized the code
+# See the gcc manual for the other levels of output: levels 1-7
+# http://gcc.gnu.org/onlinedocs/gcc-4.8.4/gcc/Debugging-Options.html#Debugging-Options
+REPORT          = -ftree-vectorizer-verbose=1
+#REPORT          = -ftree-vectorizer-verbose=2
+# OPTIMIZATION += -ftree-vectorize
+
+
+# ARCH_FLAGS      =  -m64
+WARNINGS        = 
+
+ifeq ($(gdb), 1)
+OPTIMIZATION    =  -O0
+else
+OPTIMIZATION    =  -O3
+endif
+
+ifeq ($(omp),1)
+OPTIMIZATION    +=  -fopenmp
+endif
+
+C++FLAGS        += $(INCLUDES) $(ARCH_FLAGS) $(WARNINGS) $(OPTIMIZATION) \
+                  $(XTRAFLAGS) $(DEBUG) $(REPORT)
+
+CFLAGS		+= $(INCLUDES) $(ARCH_FLAGS) $(WARNINGS) $(OPTIMIZATION) \
+                  $(XTRAFLAGS) $(DEBUG) $(REPORT)
+
+FFLAGS		= $(ARCH_FLAGS) -O2 -fno-second-underscore -ff90 -fugly-complex
+
+
+ARFLAGS		= ru
+
+
+LDFLAGS		+= $(WARNINGS) $(OPTIMIZATION) $(DEBUG) $(ARCH_FLAGS)
+LDLIBS		+= -lm -pthread
+
+
+ARCH_HAS_X	= arch_has_X
+
+
+
+#########################################################################
+# End of the System dependent prefix
+#########################################################################
+
+
+#########################################################################
+#									#
+# Suffixes for compiling most normal C++ and  C files		        #
+#									#
+#########################################################################
+
+.SUFFIXES:
+.SUFFIXES: .C .cpp .c .o
+
+.C.o:
+		@$(ECHO)
+		@$(ECHO) "Compiling Source File --" $<
+		@$(ECHO) "---------------------"
+		$(C++) $(C++FLAGS) -c $<
+		@$(ECHO)
+
+.cpp.o:
+		@$(ECHO)
+		@$(ECHO) "Compiling Source File --" $<
+		@$(ECHO) "---------------------"
+		$(C++) $(C++FLAGS) -c $<
+		@$(ECHO)
+
+
+
+.c.o:
+		@$(ECHO)
+		@$(ECHO) "Compiling Source File --" $<
+		@$(ECHO) "---------------------"
+		$(CC) $(CFLAGS) -c $<
+		@$(ECHO)
+

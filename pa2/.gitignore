@@ -1,0 +1,11 @@
+.vscode/*
+*.o
+mmpy
+tools/profile.ncu-rep
+tools/blort.log
+report/*
+!report/report.tex
+!report/report.pdf
+!report/img
+!report/report.ipynb
+.DS_Store

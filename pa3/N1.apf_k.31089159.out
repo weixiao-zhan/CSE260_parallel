@@ -1,0 +1,328 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mvapich2/2.3.6"
+   Try: "module spider mvapich2/2.3.6" to see how to load the module(s).
+
+
+
+
+[Simulation begins] Wed Jun  5 11:49:26 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 1
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:49:49 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 23.1147 sec. [392 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 1      N     100000  23.11 392.5    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:49:50 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 2
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:50:12 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 22.0905 sec. [411 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 2      N     100000  22.09 410.7    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:50:13 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:50:36 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 22.9703 sec. [395 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 4      N     100000  22.97 394.9    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:50:37 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 2 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:51:00 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 22.575 sec. [402 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    2 8      N     100000  22.57 401.9    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:51:00 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 1 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:51:23 2024
+
+End at iteration 99999
+Max norm: 1.77295e-24, L2norm: 1.53764e-25
+Running Time: 22.3084 sec. [407 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    1 16      N     100000  22.31 406.7    1.77295e-24 1.53764e-25
+  -----
+
+[Simulation begins] Wed Jun  5 11:51:24 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 32 x 1
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:51:36 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 12.2543 sec. [740 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    32 1      N     100000  12.25 740.3    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:51:38 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:51:49 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 11.013 sec. [824 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 4      N     100000  11.01 823.8    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:51:50 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:01 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 11.4187 sec. [794 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 8      N     100000  11.42 794.5    0.00000e+00 0.00000e+00
+  -----
+srun: Job 31089159 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=31089159.8
+
+[Simulation begins] Wed Jun  5 11:52:05 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 1 x 32
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:17 2024
+
+End at iteration 99999
+Max norm: 1.77295e-24, L2norm: 1.09208e-25
+Running Time: 11.8618 sec. [765 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    1 32      N     100000  11.86 764.8    1.77295e-24 1.09208e-25
+  -----
+
+[Simulation begins] Wed Jun  5 11:52:19 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:25 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 6.47163 sec. [1.4e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 4      N     100000  6.472 1402    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:52:27 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:33 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 6.27743 sec. [1.45e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 8      N     100000  6.277 1445    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:52:35 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:41 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 6.47408 sec. [1.4e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 16      N     100000  6.474 1401    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:52:52 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 64 x 2
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:52:57 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 4.96609 sec. [1.83e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    64 2      N     100000  4.966 1827    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:53:11 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:53:15 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 4.10569 sec. [2.21e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 8      N     100000  4.106 2210    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:53:29 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:53:33 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 3.99933 sec. [2.27e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 16      N     100000  3.999 2268    0.00000e+00 0.00000e+00
+  -----
+
+[Simulation begins] Wed Jun  5 11:53:46 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 2 x 64
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+Communication shut off
+
+[Simulation completes] Wed Jun  5 11:53:50 2024
+
+End at iteration 99999
+Max norm: 0.00000e+00, L2norm: 0.00000e+00
+Running Time: 4.22452 sec. [2.15e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    2 64      N     100000  4.225 2147    0.00000e+00 0.00000e+00
+  -----

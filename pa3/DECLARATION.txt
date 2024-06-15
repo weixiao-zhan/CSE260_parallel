@@ -1,0 +1,16 @@
+                    CSE 260 - Fall 2020 - Assignment #3
+
+The undersigned declare that the work performed on this assignment was
+their own, and was carried out according to the Academic Integrity
+policies in effect for this course, as stated in
+	https://sites.google.com/eng.ucsd.edu/cse260-winter-2019/academic-integrity
+
+Signed,
+        Weixiao ZHan (wezhan@ucsd.edu) [24/06/06]
+------------------------------------------------
+Instructions:
+Insert your name(s), email address(s), and date signed.
+Cut everything below the dotted line
+If you do not include this in your assignment turn in, the assignment will
+not be graded, and will be treated as a late assignment
+

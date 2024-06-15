@@ -1,0 +1,11 @@
+**.o
+.vscode/*
+benchmark-blas
+benchmark-blislab
+benchmark-naive
+.DS_Store
+report/*
+!report/report.tex
+!report/report.pdf
+!report/img/*
+!report/report.ipynb

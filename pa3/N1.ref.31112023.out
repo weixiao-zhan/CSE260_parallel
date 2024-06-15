@@ -1,0 +1,150 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mvapich2/2.3.6"
+   Try: "module spider mvapich2/2.3.6" to see how to load the module(s).
+
+
+
+
+[Simulation begins] Thu Jun  6 00:36:07 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 1
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:37:00 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 53.8447 sec. [168 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 1      Y     100000  53.84 168.5    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:37:01 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 2
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:37:54 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 52.7648 sec. [172 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 2      Y     100000  52.76 171.9    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:37:55 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 4
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:38:46 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 51.4522 sec. [176 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 4      Y     100000  51.45 176.3    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:38:47 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 2 x 8
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:39:38 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 50.8364 sec. [178 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    2 8      Y     100000  50.84 178.5    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:39:39 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 1 x 16
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:40:29 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 50.772 sec. [179 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    1 16      Y     100000  50.77 178.7    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:50:53 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 8
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:51:20 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 27.385 sec. [331 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 8      Y     100000  27.38 331.3    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:51:22 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 8
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:51:36 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 14.2596 sec. [636 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 8      Y     100000  14.26 636.2    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Thu Jun  6 00:51:47 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 16
+
+Compiled with MPI ENABLED
+
+[Simulation completes] Thu Jun  6 00:51:56 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 8.64145 sec. [1.05e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 16      Y     100000  8.641 1050    9.83612e-01 7.55139e-01
+  -----

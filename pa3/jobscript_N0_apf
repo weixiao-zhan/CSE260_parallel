@@ -1,0 +1,51 @@
+#!/bin/bash
+#SBATCH --job-name="N0 apf"
+#SBATCH --output="N0.apf.%j.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=16
+### This job runs with 2 nodes, 128 cores per node for a total of 256 tasks.
+
+#SBATCH --mem=1G
+#SBATCH --account=csd720
+#SBATCH --export=None
+
+## Time limit is HH:MM:SS
+## do not change this unless you know what you are doing, You can easily run out of computer time
+#SBATCH --export=ALL
+#SBATCH -t 0:05:00
+
+export SLURM_EXPORT_ENV=ALL
+module purge
+module load cpu
+#Load module file(s) into the shell environment
+module load gcc/10.2.0
+module load openmpi/4.1.1
+module load slurm
+
+srun --mpi=pmi2 -n 1 ./apf -n 800 -i 2000 -x 1 -y 1
+
+srun --mpi=pmi2 -n 2 ./apf -n 800 -i 2000 -x 2 -y 1
+srun --mpi=pmi2 -n 2 ./apf -n 800 -i 2000 -x 1 -y 2
+
+srun --mpi=pmi2 -n 4 ./apf -n 800 -i 2000 -x 4 -y 1
+srun --mpi=pmi2 -n 4 ./apf -n 800 -i 2000 -x 2 -y 2
+srun --mpi=pmi2 -n 4 ./apf -n 800 -i 2000 -x 1 -y 4
+
+srun --mpi=pmi2 -n 8 ./apf -n 800 -i 2000 -x 8 -y 1
+srun --mpi=pmi2 -n 8 ./apf -n 800 -i 2000 -x 4 -y 2
+srun --mpi=pmi2 -n 8 ./apf -n 800 -i 2000 -x 2 -y 4
+srun --mpi=pmi2 -n 8 ./apf -n 800 -i 2000 -x 1 -y 8
+
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 12 -y 1
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 6 -y 2
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 4 -y 3
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 3 -y 4
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 2 -y 6
+srun --mpi=pmi2 -n 12 ./apf -n 800 -i 2000 -x 1 -y 12
+
+srun --mpi=pmi2 -n 16 ./apf -n 800 -i 2000 -x 16 -y 1
+srun --mpi=pmi2 -n 16 ./apf -n 800 -i 2000 -x 8 -y 2
+srun --mpi=pmi2 -n 16 ./apf -n 800 -i 2000 -x 4 -y 4
+srun --mpi=pmi2 -n 16 ./apf -n 800 -i 2000 -x 2 -y 8
+srun --mpi=pmi2 -n 16 ./apf -n 800 -i 2000 -x 1 -y 16

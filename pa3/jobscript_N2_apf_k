@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name="N2 apf k"
+#SBATCH --output="N2.apf_k.%j.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=3
+#SBATCH --ntasks-per-node=128
+#SBATCH --mem=128G
+#SBATCH --account=csd720
+# #SBATCH --export=None
+#SBATCH --export=ALL
+#SBATCH -t 0:05:00
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=wezhan@ucsd.edu
+
+export SLURM_EXPORT_ENV=ALL
+module purge
+module load cpu
+#Load module file(s) into the shell environment
+module load gcc/9.2.0
+module load mvapich2/2.3.6
+module load slurm
+
+srun --mpi=pmi2 -n 128 ./apf -k -n 8000 -i 8000 -x 64 -y 2
+srun --mpi=pmi2 -n 128 ./apf -k -n 8000 -i 8000 -x 16 -y 8
+srun --mpi=pmi2 -n 128 ./apf -k -n 8000 -i 8000 -x 8 -y 16
+srun --mpi=pmi2 -n 128 ./apf -k -n 8000 -i 8000 -x 2 -y 64
+
+srun --mpi=pmi2 -n 192 ./apf -k -n 8000 -i 8000 -x 64 -y 3
+srun --mpi=pmi2 -n 192 ./apf -k -n 8000 -i 8000 -x 16 -y 12
+srun --mpi=pmi2 -n 192 ./apf -k -n 8000 -i 8000 -x 12 -y 16
+srun --mpi=pmi2 -n 192 ./apf -k -n 8000 -i 8000 -x 3 -y 64
+
+srun --mpi=pmi2 -n 256 ./apf -k -n 8000 -i 8000 -x 64 -y 4
+srun --mpi=pmi2 -n 256 ./apf -k -n 8000 -i 8000 -x 16 -y 16
+srun --mpi=pmi2 -n 256 ./apf -k -n 8000 -i 8000 -x 4 -y 64
+
+srun --mpi=pmi2 -n 384 ./apf -k -n 8000 -i 8000 -x 48 -y 8
+srun --mpi=pmi2 -n 384 ./apf -k -n 8000 -i 8000 -x 24 -y 16
+srun --mpi=pmi2 -n 384 ./apf -k -n 8000 -i 8000 -x 16 -y 24
+srun --mpi=pmi2 -n 384 ./apf -k -n 8000 -i 8000 -x 8 -y 48

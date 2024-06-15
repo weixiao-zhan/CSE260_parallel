@@ -1,0 +1,310 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mvapich2/2.3.6"
+   Try: "module spider mvapich2/2.3.6" to see how to load the module(s).
+
+
+
+
+[Simulation begins] Tue Jun  4 23:56:53 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 1
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:57:19 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 25.8584 sec. [351 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 1      Y     100000  25.86 350.8    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:57:20 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 2
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:57:44 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 23.8091 sec. [381 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 2      Y     100000  23.81 381    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:57:45 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:58:09 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 24.9237 sec. [364 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 4      Y     100000  24.92 364    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:58:10 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 2 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:58:34 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 24.0848 sec. [377 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    2 8      Y     100000  24.08 376.7    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:58:35 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 1 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:58:59 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 24.2588 sec. [374 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    1 16      Y     100000  24.26 374    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:59:00 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 32 x 1
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:59:16 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 15.1765 sec. [598 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    32 1      Y     100000  15.18 597.8    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:59:17 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:59:30 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 12.8689 sec. [705 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 4      Y     100000  12.87 705    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:59:31 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:59:44 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 13.5695 sec. [669 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 8      Y     100000  13.57 668.6    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Tue Jun  4 23:59:45 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 1 x 32
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Tue Jun  4 23:59:59 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 13.3292 sec. [681 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    1 32      Y     100000  13.33 680.6    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:00:00 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:00:08 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 7.75649 sec. [1.17e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 4      Y     100000  7.756 1170    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:00:10 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:00:17 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 7.25871 sec. [1.25e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 8      Y     100000  7.259 1250    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:00:19 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 4 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:00:27 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 7.76452 sec. [1.17e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    4 16      Y     100000  7.765 1168    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:00:37 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 64 x 2
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:00:44 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 6.95779 sec. [1.3e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    64 2      Y     100000  6.958 1304    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:19:08 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 16 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:19:13 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 5.01975 sec. [1.81e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    16 8      Y     100000  5.02 1807    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:01:12 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 8 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:01:16 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 4.7346 sec. [1.92e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    8 16      Y     100000  4.735 1916    9.83612e-01 7.55139e-01
+  -----
+
+[Simulation begins] Wed Jun  5 00:01:30 2024
+
+dt= 0.00144443, # iters = 100000
+m x n = 1800 x 1800
+processor geometry: 2 x 64
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:01:36 2024
+
+End at iteration 99999
+Max norm: 9.83612e-01, L2norm: 7.55139e-01
+Running Time: 6.0922 sec. [1.49e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 1800 1800    2 64      Y     100000  6.092 1489    9.83612e-01 7.55139e-01
+  -----

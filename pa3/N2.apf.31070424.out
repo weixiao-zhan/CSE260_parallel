@@ -1,0 +1,345 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mvapich2/2.3.6"
+   Try: "module spider mvapich2/2.3.6" to see how to load the module(s).
+
+
+
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:22:57 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 64 x 2
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:23:40 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 42.7494 sec. [335 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    64 2      Y     8000  42.75 335.3    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:23:42 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 16 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:24:22 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 40.1388 sec. [357 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    16 8      Y     8000  40.14 357.2    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:24:24 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 8 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:25:04 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 39.8368 sec. [360 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    8 16      Y     8000  39.84 359.9    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:25:06 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 2 x 64
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:25:47 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 41.263 sec. [347 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    2 64      Y     8000  41.26 347.4    9.99488e-01 6.52693e-01
+  -----
+
+srun: warning: can't honor --ntasks-per-node set to 128 which doesn't match the requested tasks 192 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 11:44:08 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 64 x 3
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 11:44:37 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 28.3389 sec. [506 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    64 3      Y     8000  28.34 505.9    9.99488e-01 6.52693e-01
+  -----
+srun: warning: can't honor --ntasks-per-node set to 128 which doesn't match the requested tasks 192 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 11:44:39 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 16 x 12
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 11:45:05 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 26.4428 sec. [542 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    16 12      Y     8000  26.44 542.2    9.99488e-01 6.52693e-01
+  -----
+srun: warning: can't honor --ntasks-per-node set to 128 which doesn't match the requested tasks 192 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 11:45:10 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 12 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 11:45:37 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 27.2514 sec. [526 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    12 16      Y     8000  27.25 526.1    9.99488e-01 6.52693e-01
+  -----
+srun: warning: can't honor --ntasks-per-node set to 128 which doesn't match the requested tasks 192 with the number of requested nodes 3. Ignoring --ntasks-per-node.
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-48:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 11:45:39 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 3 x 64
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 11:46:07 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 27.9921 sec. [512 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    3 64      Y     8000  27.99 512.1    9.99488e-01 6.52693e-01
+  -----
+
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:25:58 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 64 x 4
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:26:23 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 24.6747 sec. [581 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    64 4      Y     8000  24.67 581    9.99488e-01 6.52693e-01
+  -----
+srun: Job 31070424 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for StepId=31070424.5
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:26:39 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 16 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:27:04 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 25.1965 sec. [569 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    16 16      Y     8000  25.2 569    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-6-27:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 00:27:19 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 4 x 64
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 00:27:42 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 23.822 sec. [602 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    4 64      Y     8000  23.82 601.8    9.99488e-01 6.52693e-01
+  -----
+
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 02:32:21 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 48 x 8
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 02:32:29 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 7.56799 sec. [1.89e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    48 8      Y     8000  7.568 1894    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 02:32:44 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 24 x 16
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 02:32:52 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 7.49003 sec. [1.91e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    24 16      Y     8000  7.49 1914    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 02:33:06 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 16 x 24
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 02:33:13 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 6.79713 sec. [2.11e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    16 24      Y     8000  6.797 2109    9.99488e-01 6.52693e-01
+  -----
+Warning: RDMA CM Initialization failed. Continuing without RDMA CM support. Please set MV2_USE_RDMA_CM=0 to disable RDMA CM.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] All nodes involved in the job were detected to be homogeneous in terms of processors and interconnects. Setting MV2_HOMOGENEOUS_CLUSTER=1 can improve job startup performance on such systems. The following link has more details on enhancing job startup performance. http://mvapich.cse.ohio-state.edu/performance/job-startup/.
+[exp-8-31:mpi_rank_0][rdma_param_handle_heterogeneity] To suppress this warning, please set MV2_SUPPRESS_JOB_STARTUP_PERFORMANCE_WARNING to 1
+
+[Simulation begins] Wed Jun  5 02:33:28 2024
+
+dt= 7.41769e-05, # iters = 8000
+m x n = 8000 x 8000
+processor geometry: 8 x 48
+
+Using SSE Intrinsics
+Compiled with MPI ENABLED
+
+[Simulation completes] Wed Jun  5 02:33:35 2024
+
+End at iteration 7999
+Max norm: 9.99488e-01, L2norm: 6.52693e-01
+Running Time: 6.9316 sec. [2.07e+03 GFlop/sec]
+
+   M x N   px x py Comm?   #iter  T_p, Gflops        Linf, L2
+@ 8000 8000    8 48      Y     8000  6.932 2068    9.99488e-01 6.52693e-01
+  -----
